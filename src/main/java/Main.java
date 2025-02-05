@@ -50,5 +50,67 @@ public class Main {
 
       boolean bData =  firstName.contains("a");
         System.out.println(bData);
+
+        // SubString
+
+        String str1 = "Java shazam is fun with ";
+
+
+        if(str1.indexOf("shazam")>0){
+            System.out.println("Found the name");
+        }
+
+        System.out.println(str1.indexOf("shazam"));
+
+        // IndexOf
+
+        System.out.println(str1.indexOf('f'));
+
+
+        String str2 = "java";
+
+        System.out.println(str2.substring(1,3));
+
+
+        //Join  I like java
+
+        String a = "Java";
+        String b = "Like";
+        String cc = "I";
+        // I - like- Java
+
+        String joinedStr = String.join(" ",cc,b,a);
+        System.out.println(joinedStr);
+
+
+// replace
+
+        String sEx = "bat ball";
+
+       String newStr = sEx.replace('b','c');
+
+        System.out.println(newStr);
+
+        // String : immutable
+
+        String username ="Jack";
+        username = "ali";
+
+
+        //Mutable
+
+       // StringBuffer, StringBuilder
+        //SQl
+
+        // Database , MangoDb(NoSQl) , Document , Collection , (table(Rows,Cols) Relational Database or SQL
+        // DBMS
+        // POSTGRES
+
+
+        StringBuilder user = new StringBuilder("jack ");
+        user.append("Smith");
+
+        System.out.println(user);
+
     }
 }
